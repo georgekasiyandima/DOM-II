@@ -18,23 +18,7 @@ window.onload = function (evt) {
         evt.target.claslist.toggle('mirror')
     })
 }
- 
-document.body.addEventListener('dblclick' evt => {
-    evt.target.innerHTML=''
-})
-
-window.addEventListener('keydown' evt => {
-    if (evt.key == 6) {
-        document.body.innerHTML = '<h1>YOU RAN ORDER 66</h1>'
-    }
-})
-
-document.body.addEventListener('mousemove' evt => {
-    const { clientX, clientY } = evt
-    //console.log(`mouse is at ${clientX}, ${clientY}`)
-})
-
-const destinations = document.querySelectorAll('.destination')
+ const destinations = document.querySelectorAll('.destination')
 for (let destination of destinations) {
     destination.addEventListener('mouseenter', () => {
         destination.style.fontWeight = 'bold'
